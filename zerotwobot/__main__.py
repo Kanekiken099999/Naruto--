@@ -75,26 +75,18 @@ def get_readable_time(seconds: int) -> str:
 buttons = [
     [
         InlineKeyboardButton(
-            text="Add to Group",
+            text="Add me to your Group",
             url=f"https://t.me/{dispatcher.bot.username}?startgroup=True",
         ),
     ],
     [
         InlineKeyboardButton(
-            "Support Group",
-            "https://t.me/blackbulls_support",
+            "Support",
+            "https://t.me/naruto_robot_support",
         ),
-        InlineKeyboardButton(
-            "Announcemnets",
-            "https://t.me/blackbull_bots"
-        ),
-    ],
-    [
-        InlineKeyboardButton(
-            text="Source Code",
-            url="https://github.com/Black-Bulls-Bots/zerotwobot"
-        )
-    ]
+        
+    ], 
+    
 ]
 
 
@@ -120,7 +112,7 @@ And the following:
     "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
 )
 
-ZEROTWO_IMG = "https://telegra.ph/file/5b9bc54b0ae753bb1ec18.jpg"
+ZEROTWO_IMG = "https://telegra.ph/file/b01868d0bdf6879d9e596.mp4"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
  You can support the project by contacting @kishoreee \
@@ -251,12 +243,9 @@ def start(update: Update, context: CallbackContext):
                     [
                         InlineKeyboardButton(
                             text="Support",
-                            url="https://t.me/blackbulls_support",
+                            url="https://t.me/naruto_robot_support",
                         ),
-                        InlineKeyboardButton(
-                            text=str("Announcement's"),
-                            url="https://t.me/blackbull_bots",
-                        ),
+                        
                     ],
                 ],
             ),
